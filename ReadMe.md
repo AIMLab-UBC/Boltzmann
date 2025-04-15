@@ -84,7 +84,7 @@ conda env create -f assets/files/cuda12_4.yaml
 Then activate the environment if you run the Python code. If not, make sure to activate it in the bash files.
 ### 2. Reproducing the Text Retrieval Experiment
 
-To reproduce the LLM-based **text retrieval pipeline** described in the paper, run the following scripts in order:
+To reproduce the LLM-based **text retrieval pipeline** described in the paper (only for a small sample set of TCGA-LGG and TCGA-GBM), run the following scripts in order:
 
 ```bash
 1. ./text_retrieval/text_create_database.sh     # Step 1: Creates the encoded database of all LLM features
@@ -96,7 +96,7 @@ To reproduce the LLM-based **text retrieval pipeline** described in the paper, r
 Katherine, this is for you to update!
 
 ### 4. Boltzmann Semantic Score Computation
-To evaluate the semantic alignment between vision and language models using the **Boltzmann Semantic Score**, simply run:
+To evaluate the semantic alignment between vision and language models using the **Boltzmann Semantic Score**, simply run (for the given dataset, you can choose between LGG or GBM):
 
 ```bash
 bash ./boltzmann_semantic_score/vision_language_score_evaluator.sh
