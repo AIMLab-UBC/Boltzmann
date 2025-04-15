@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Activate Conda environment
-#conda activate cuda12_4
+conda activate cuda12_4
 
 # Run Python script
 python3 ./text_retrieval/text_create_database.py \
