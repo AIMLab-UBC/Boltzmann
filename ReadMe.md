@@ -38,6 +38,8 @@ We use paired WSI images and pathology reports from **32 TCGA cancer types**, co
 These include:
 - `.pt` LLM embeddings of pathology reports
 - `.h5` LVM features from 7 vision models
+When you downloaded them, place them in the dedicated directories in `./assets/LLM` and  `./assets/LVM`, respectively.
+
 We are now releasing a small portion of the data. We will release the LLM encodings of pathology reports soon. Please stay tuned!
 ---
 
