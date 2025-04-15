@@ -1,0 +1,11 @@
+{"Brain": ["GBM", "LGG"],
+"Endocrine":["ACC", "PCPG", "THCA"],
+"Gastro":["COADREAD", "ESCA", "STAD"],
+"Gynaeco":["CESC", "OV", "UCS", "UCEC"],
+"Liver-Panc":["CHOL", "LIHC", "PAAD"],
+"Melanocytic":["SKCM", "UVM"],
+"Prostate-Testis":["PRAD", "TGCT"],
+"Pulmonary":["LUAD", "LUSC", "MESO", "THYM"],
+"Urinary":["BLCA", "KICH", "KIRC", "KIRP"]
+}
+
