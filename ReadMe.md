@@ -41,6 +41,65 @@ For a dataset of paired images and medical reports:
 - ✅ Applicable to any domain with paired image-text data (e.g., medical, industrial inspection)
 ---
 
+## 🧠 Core Idea
+
+**Boltzmann Factor:**
+
+$$
+\frac{p_i}{p_q} = \exp\left( -\frac{\Delta \mathcal{E}}{kT} \right) = \exp\left( \frac{-\left\| \mathcal{L}_i - \mathcal{L}_q \right\|_2}{\sqrt{d_1}} \right)
+$$
+
+---
+
+**Second-order Boltzmann Factor:**
+
+$$
+b_{i,j \mid q} := \frac{p_i}{p_j} \cdot \frac{p_i}{p_q}
+$$
+
+$$
+\mathbb{A} = \left\{(i,j) \; \middle| \; \forall \mathcal{V}_j \in near(\mathcal{V}_q, k) \;\&\; \mathcal{L}_j \in near(\mathcal{L}_q, k), \; \exists i : \mathcal{L}_i \in near(\mathcal{L}_q, k) \;\&\; \mathcal{L}_i = \mathcal{L}_j \right\}
+$$
+
+$$
+\mathbb{D} = \left\{(i,j) \; \middle| \; \forall \mathcal{V}_j \in near(\mathcal{V}_q, k) \;\&\; \mathcal{L}_j \notin near(\mathcal{L}_q, k), \; \exists i : \mathcal{V}_i \notin near(\mathcal{V}_q, k) \;\&\; \mathcal{L}_i \in near(\mathcal{L}_q, k) \right\}
+$$
+
+---
+
+**Boltzmann Semantic Score for a query \( q \):**
+
+$$
+\mathcal{B}_q =
+\frac{
+    \sum\limits_{(i,j)\in \mathbb{A}} b_{i,j \mid q}
+}{
+    \sum\limits_{(i,j)\in \mathbb{A} \cup \mathbb{D}} b_{i,j \mid q}
+}
+=
+\frac{
+    \sum\limits_{(i,j)\in \mathbb{A} \cup \mathbb{D}} b_{i,j \mid q} - \sum\limits_{(i,j)\in \mathbb{D}} b_{i,j \mid q}
+}{
+    \sum\limits_{(i,j)\in \mathbb{A} \cup \mathbb{D}} b_{i,j \mid q}
+}
+= 1 - 
+\frac{
+    \sum\limits_{(i,j)\in \mathbb{D}} b_{i,j \mid q}
+}{
+    \sum\limits_{(i,j)\in \mathbb{A} \cup \mathbb{D}} b_{i,j \mid q}
+}
+$$
+
+---
+
+**Finally, the average Boltzmann Semantic Score is calculated as:**
+
+$$
+\mathcal{B} = \frac{1}{|\mathcal{L}|} \sum_{q \in \mathcal{L}} \mathcal{B}_q
+$$
+
+---
+
 ## 💾 Dataset & Features
 
 We use paired WSI images and pathology reports from **32 TCGA cancer types**, covering ~9,500 patients.
