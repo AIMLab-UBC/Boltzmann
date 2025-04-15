@@ -25,6 +25,16 @@ For a dataset of paired images and medical reports:
 - Use **LVMs** to create an analogous structure from medical images
 - Define **BSS** as the structural alignment between the two modalities using a Boltzmann-based similarity measure
 
+The better the alignment, the higher the BSS — indicating the LVM captures expert-level semantics.
+
+<br>
+
+![Boltzmann Semantic Score Diagram](assets/files/github_readme_figures/bss.PNG)
+
+<br>
+
+![Theoretical Illustration](assets/files/github_readme_figures/theory.PNG)
+
 ---
 ## 📊 Highlights from the Paper
 
