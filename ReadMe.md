@@ -81,17 +81,17 @@ The directory is structured as follows:
 
 ## ⚙️ Getting Started
 ### 1. Clone the Repository
-
-```bash
-git clone https://github.com/AIMLab-UBC/Boltzmann.git
-cd Boltzmann
-```
 To run the code with the correct dependencies, use the provided YAML file to create a conda environment:
 
 ```bash
 conda env create -f assets/files/cuda12_4.yaml
 ```
-Then activate the environment if you run the Python code. If not, make sure to activate it in the bash files.
+Then clone the repository:
+
+```bash
+git clone https://github.com/AIMLab-UBC/Boltzmann.git
+cd Boltzmann
+```
 ### 2. Reproducing the Text Retrieval Experiment
 
 To reproduce the LLM-based **text retrieval pipeline** described in the paper (only for a small sample set of TCGA-LGG and TCGA-GBM), run the following scripts in order:
