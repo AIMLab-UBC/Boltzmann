@@ -30,3 +30,4 @@ For a dataset of paired images and medical reports:
 
 ## 🗂 Repository Structure
 
+Boltzmann/ ├── boltzmann_semantic_score/ # BSS computation core ├── text_retrieval/ # Info retrieval and survival prediction ├── assets/ # Figures, plots, and UMAPs └── README.md # Project overview
