@@ -30,4 +30,10 @@ For a dataset of paired images and medical reports:
 
 ## 🗂 Repository Structure
 
-Boltzmann/ ├── boltzmann_semantic_score/ # BSS computation core ├── text_retrieval/ # Info retrieval and survival prediction ├── assets/ # Figures, plots, and UMAPs └── README.md # Project overview
+Boltzmann/ 
+  ├── boltzmann_semantic_score/ # BSS computation core code
+  ├── text_retrieval/ # Info retrieval code on LLM encodings
+  ├── assets/ # all the required input and output files
+      ├──files/ # all the required input files for running different codes
+      ├──generated_files/ # all the outputs you generate with the codes in this package goes in this directory
+  └── README.md # Project overview
