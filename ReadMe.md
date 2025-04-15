@@ -41,7 +41,7 @@ These include:
 We are now releasing a small portion of the data. We will release the LLM encodings of pathology reports soon. Please stay tuned!
 ---
 
-## ⚙️ Getting Started
+## 🗂 Repository Structure
 
 The directory is structured as follows:
 <pre lang="markdown">Boltzmann/
@@ -53,13 +53,11 @@ The directory is structured as follows:
 └── README.md                   # Project overview and documentation
 </pre>
 
+## ⚙️ Getting Started
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/AIMLab-UBC/Boltzmann.git
 cd Boltzmann
-
-## 🗂 Repository Structure
-
 
 
