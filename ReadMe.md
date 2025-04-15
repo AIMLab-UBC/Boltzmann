@@ -67,6 +67,8 @@ The directory is structured as follows:
 └── README.md                   # Project overview and documentation
 </pre>
 
+---
+
 ## ⚙️ Getting Started
 ### 1. Clone the Repository
 
@@ -100,8 +102,9 @@ To evaluate the semantic alignment between vision and language models using the 
 bash ./boltzmann_semantic_score/vision_language_score_evaluator.sh
 ```
 
+---
 
-### 📜 Citation
+## 📜 Citation
 
 If you use this work, please cite:
 
