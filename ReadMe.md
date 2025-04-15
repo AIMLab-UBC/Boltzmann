@@ -102,6 +102,8 @@ To evaluate the semantic alignment between vision and language models using the 
 bash ./boltzmann_semantic_score/vision_language_score_evaluator.sh
 ```
 
+## Note:
+Following the feature structure for LVM and LLM, you can deploy the code for any other dataset!
 ---
 
 ## 📜 Citation
