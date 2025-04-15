@@ -85,3 +85,20 @@ To evaluate the semantic alignment between vision and language models using the 
 ```bash
 bash ./boltzmann_semantic_score/vision_language_score_evaluator.sh
 ```
+
+## 📊 Highlights from the Paper
+
+- ✅ Evaluated **5 LLMs** (e.g., Command-R, Bio-Llama3, Llama3, Gemma, Jamba)
+- ✅ Evaluated **7 LVMs** (e.g., PLIP, UNI, CTransPath, Phikon, Swin, ViT, Dino-Lunit)
+- 📈 Found strong **correlation between BSS and downstream tasks** like retrieval accuracy and survival C-index
+- 📚 Demonstrated that **LLM features alone can predict patient outcomes**
+
+---
+
+## 📌 Why Use BSS?
+
+- ✅ Scalable and model-agnostic
+- ✅ No need for expert annotations or qualitative attention maps
+- ✅ Quantifies semantic alignment between visual and textual spaces
+- ✅ Applicable to any domain with paired image-text data (e.g., medical, satellite, industrial inspection)
+
