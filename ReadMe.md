@@ -7,7 +7,6 @@ _Ali Khajegili Mirabadi, Katherine Rich, Hossein Farahani, Ali Bashashati_
 _International Conference on Learning Representations (ICLR) 2025_
 
 [📄 Paper (ICLR 2025)](https://openreview.net/pdf?id=9yJKTosUex)  
-[📁 LLM & LVM Feature Files (Google Drive)](https://drive.google.com/drive/folders/14Vw8pAsck-PlfcwbwRCl_EtE4lYqMtNJ?usp=sharing)
 
 ---
 
@@ -39,7 +38,6 @@ These include:
 - `.pt` LLM embeddings of pathology reports
 - `.h5` LVM features from 7 vision models
 When you downloaded them, place them in the dedicated directories in `./assets/LLM` and  `./assets/LVM`, respectively.
-
 We are now releasing a small portion of the data. We will release the LLM encodings of pathology reports soon. Please stay tuned!
 ---
 
