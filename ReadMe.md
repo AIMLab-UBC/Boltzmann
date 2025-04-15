@@ -70,3 +70,13 @@ To reproduce the LLM-based **text retrieval pipeline** described in the paper, r
 2. text_search_eval.sh         # Step 2: Performs retrieval evaluation using the created database
 3. search_result_reporter.sh   # Step 3: Aggregates results into a final report format
 ```
+
+### 3. Reproducing the Survival Prediction Experiment
+Katherine, this is for you to update!
+
+### 4. Boltzmann Semantic Score Computation
+To evaluate the semantic alignment between vision and language models using the **Boltzmann Semantic Score**, simply run:
+
+```bash
+bash vision_language_score_evaluator.sh
+```
