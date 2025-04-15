@@ -6,7 +6,7 @@ Official repository for:
 _Ali Khajegili Mirabadi, Katherine Rich, Hossein Farahani, Ali Bashashati_  
 _International Conference on Learning Representations (ICLR) 2025_
 
-[📄 Paper (ICLR 2025)](https://arxiv.org/abs/PLACEHOLDER)  
+[📄 Paper (ICLR 2025)](https://openreview.net/pdf?id=9yJKTosUex)  
 [📁 LLM & LVM Feature Files (Google Drive)](https://drive.google.com/drive/folders/14Vw8pAsck-PlfcwbwRCl_EtE4lYqMtNJ?usp=sharing)
 
 ---
