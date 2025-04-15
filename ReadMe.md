@@ -60,4 +60,12 @@ The directory is structured as follows:
 git clone https://github.com/AIMLab-UBC/Boltzmann.git
 cd Boltzmann
 
+### 2. Reproducing the Text Retrieval Experiment
+
+To reproduce the LLM-based **text retrieval pipeline** described in the paper, run the following scripts in order:
+
+```bash
+1. text_create_database.sh     # Step 1: Creates the encoded database of all LLM features
+2. text_search_eval.sh         # Step 2: Performs retrieval evaluation using the created database
+3. search_result_reporter.sh   # Step 3: Aggregates results into a final report format
 
