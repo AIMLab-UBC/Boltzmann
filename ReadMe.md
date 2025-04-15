@@ -60,15 +60,20 @@ The directory is structured as follows:
 git clone https://github.com/AIMLab-UBC/Boltzmann.git
 cd Boltzmann
 ```
+To run the code with the correct dependencies, use the provided YAML file to create a conda environment:
 
+```bash
+conda env create -f assets/files/cuda12_4.yaml
+```
+Then activate the environment if you run the Python code. If not, make sure to activate it in the bash files.
 ### 2. Reproducing the Text Retrieval Experiment
 
 To reproduce the LLM-based **text retrieval pipeline** described in the paper, run the following scripts in order:
 
 ```bash
-1. text_create_database.sh     # Step 1: Creates the encoded database of all LLM features
-2. text_search_eval.sh         # Step 2: Performs retrieval evaluation using the created database
-3. search_result_reporter.sh   # Step 3: Aggregates results into a final report format
+1. ./text_retrieval/text_create_database.sh     # Step 1: Creates the encoded database of all LLM features
+2. ./text_retrieval/text_search_eval.sh         # Step 2: Performs retrieval evaluation using the created database
+3. ./text_retrieval/search_result_reporter.sh   # Step 3: Aggregates results into a final report format
 ```
 
 ### 3. Reproducing the Survival Prediction Experiment
@@ -78,5 +83,5 @@ Katherine, this is for you to update!
 To evaluate the semantic alignment between vision and language models using the **Boltzmann Semantic Score**, simply run:
 
 ```bash
-bash vision_language_score_evaluator.sh
+bash ./boltzmann_semantic_score/vision_language_score_evaluator.sh
 ```
