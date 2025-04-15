@@ -1,0 +1,39 @@
+name: cuda12_4
+channels:
+  - xformers
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - matplotlib
+  - pandas
+  - scipy
+  - seaborn
+  - pytorch=2.4.1
+  - torchvision=0.19.1
+  - torchaudio=2.4.1
+  - pytorch-cuda=12.4
+  - xformers
+  - scikit-learn
+  - opencv-python
+  - h5py
+  - jinja2
+  - pyyaml
+  - requests
+  - networkx
+  - sympy
+  - pip:
+      - einops
+      - einops-exts
+      - timm
+      - transformers
+      - huggingface-hub
+      - sentencepiece
+      - safetensors
+      - umap-learn
+      - rich
+      - python-dotenv
+      - textblob
