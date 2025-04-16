@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" height="40" style="vertical-align: middle;"/>
-  <span style="font-size: 30px; vertical-align: middle;"><b>Boltzmann Semantic Score</b></span>
+  <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" height="30" style="vertical-align: middle;"/>
+  <span style="font-size: 80px; vertical-align: middle;"><b>Boltzmann Semantic Score</b></span>
 </p>
 
 Official repository for:
