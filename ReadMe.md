@@ -2,9 +2,6 @@
 <h1 align="center">
   <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" height="35" style="vertical-align: middle;"/>
 
-  fgfg
-</h1>
-<h1 align="center">
   Boltzmann Semantic Score
 </h1>
 Official repository for:
