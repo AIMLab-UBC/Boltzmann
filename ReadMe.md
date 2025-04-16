@@ -21,11 +21,11 @@ Unlike existing qualitative approaches, BSS offers a **quantitative**, **scalabl
 ## 🧠 Core Idea
 
 For a dataset of paired images and medical reports:
-- Use **LLMs** to create a structural representation of expert-written pathology reports
+- Use **LLMs** (or any proper text embedder) to create a structural representation of expert-written pathology reports
 - Use **LVMs** to create an analogous structure from medical images
-- Define **BSS** as the structural alignment between the two modalities using a Boltzmann-based similarity measure
+- Define **BSS** as the structural alignment between the two modalities using a new Boltzmann-based similarity measure
 
-The theory of Boltzmann semantic score is demonstrated as follows: 
+The theory of the Boltzmann semantic score is demonstrated as follows: 
 <br>
 
 ![Boltzmann Semantic Score Diagram](assets/files/github_readme_figures/bss.PNG)
@@ -61,7 +61,7 @@ These include:
 - `.pt` LLM embeddings of pathology reports
 - `.h5` LVM features from 7 vision models
 - When you downloaded them, place them in the dedicated directories in `./assets/LLM` and  `./assets/LVM`, respectively. \
-We are now releasing a small portion of the data. We will release the LLM encodings of pathology reports soon. Please stay tuned!
+We are now releasing a small portion of the data. We will be releasing the LLM encodings of pathology reports soon. Please stay tuned!
 ---
 
 ## 🗂 Repository Structure
@@ -79,13 +79,15 @@ The directory is structured as follows:
 ---
 
 ## ⚙️ Getting Started
-### 1. Clone the Repository
+### 0. Create the Conda environment
 To run the code with the correct dependencies, use the provided YAML file to create a conda environment:
 
 ```bash
 conda env create -f assets/files/cuda12_4.yaml
 ```
-Then clone the repository:
+### 1. Clone the Repository
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/AIMLab-UBC/Boltzmann.git
@@ -105,7 +107,7 @@ To reproduce the LLM-based **text retrieval pipeline** described in the paper (o
 Katherine, this is for you to update!
 
 ### 4. Boltzmann Semantic Score Computation
-To evaluate the semantic alignment between vision and language models using the **Boltzmann Semantic Score**, simply run (for the given dataset, you can choose between LGG or GBM):
+To evaluate the semantic alignment between vision and language models using the **Boltzmann Semantic Score**, simply run (for the given toy datasets, you can choose between LGG or GBM):
 
 ```bash
 bash ./boltzmann_semantic_score/vision_language_score_evaluator.sh
