@@ -11,6 +11,8 @@ _Ali Khajegili Mirabadi, Katherine Rich, Hossein Farahani, Ali Bashashati_
 _International Conference on Learning Representations (ICLR) 2025_
 
 [📄 Paper ](https://openreview.net/pdf?id=9yJKTosUex)  
+[📽️ ICLR Page (presentation + poster)](https://iclr.cc/virtual/2025/poster/30657)  
+
 
 ---
 
