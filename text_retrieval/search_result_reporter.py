@@ -80,9 +80,7 @@ plt.figure(figsize=(20, 4))
 bar_width = 0.28
 index = np.arange(len(cancer_types))
 
-# plt.bar(index, avg_accuracy, bar_width, label='Avg. Accuracy')
-# plt.bar(index + bar_width, avg_precision, bar_width, label='Avg. Precision')
-# plt.bar(index + 2*bar_width, avg_f1_score, bar_width, label='Avg. F1 Score')  # Add F1 score
+
 plt.bar(index, avg_accuracy, bar_width, label='Accuracy', color='#00d9d9')  # Cyan
 plt.bar(index + bar_width, avg_precision, bar_width, label='AP@k', color='#ffa742')  # Orange
 plt.bar(index + 2*bar_width, avg_f1_score, bar_width, label='F1 Score', color='#a3d122')  # Coral green

@@ -1,7 +1,5 @@
 import sys
 import os
-sys.path.append('/projects/ovcare/classification/Ali/Visual-Language/miniconda')
-sys.path.append('/projects/ovcare/classification/Ali/Visual-Language/codes')
 from loading_utils import visual_feats_database, text_feats_database
 from search_utils import query_manager, visual_search, text_search, database_matcher, map_visual_results, update_databases, visual_slide2patient_database
 from score_utils import graph_compare2

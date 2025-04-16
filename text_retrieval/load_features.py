@@ -6,7 +6,7 @@ import json
 import pandas as pd
 
 def load_text(path_to_reports):
-    data = pd.read_csv(path_to_reports) #'/projects/ovcare/classification/Ali/Visual-Language/data/TCGA_Reports.csv')
+    data = pd.read_csv(path_to_reports) 
     return data
 
 

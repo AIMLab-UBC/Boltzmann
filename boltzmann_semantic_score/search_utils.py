@@ -16,17 +16,11 @@ def visual_search(visual_database, query_list, top_k=1):
     if len(query_list)==1:
         query_idx = visual_database['patient_ids'].index(query_list[0])
         query = visual_database['features'][query_idx]
-        #sim = torch.nn.functional.cosine_similarity(query, visual_database['features'], dim=1, eps=1e-6)
         sim = torch.cdist(query.unsqueeze(0), visual_database['features'], p=2)
         #print(sim)
         topk = torch.topk(sim.squeeze(), k = top_k + 1, largest=False)
         topk_report = {'sim':topk.values, 'index':topk.indices}
     else:
-        # feat = []
-        # for q in query_list:
-        #     query_idx = visual_database['slide_ids'].index(q)
-        #     feat.append(visual_database['features'][query_idx])
-        # query = torch.stack(feat, dim = 0)
         topk_report = {'sim':torch.tensor([]), 'index':torch.tensor([])}
     return topk_report
 
