@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" width="200"/>
+  <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" width="5"/>
 </p>
 
 # Boltzmann Semantic Score (BSS)
