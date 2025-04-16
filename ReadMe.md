@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" width="200"/>
+</p>
+
 # Boltzmann Semantic Score (BSS)
 
 Official repository for:
