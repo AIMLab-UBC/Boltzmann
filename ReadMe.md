@@ -121,13 +121,12 @@ bash ./boltzmann_semantic_score/vision_language_score_evaluator.sh
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{
-mirabadi2025boltzmann,
-title={Boltzmann Semantic Score: A Semantic Metric for Evaluating Large Vision Models Using Large Language Models},
-author={Ali Khajegili Mirabadi and Katherine Rich and Hossein Farahani and Ali Bashashati},
-booktitle={The Thirteenth International Conference on Learning Representations},
-year={2025},
-url={https://openreview.net/forum?id=9yJKTosUex}
+@inproceedings{mirabadi2025boltzmann,
+  title={Boltzmann Semantic Score: A Semantic Metric for Evaluating Large Vision Models Using Large Language Models},
+  author={Ali Khajegili Mirabadi and Katherine Rich and Hossein Farahani and Ali Bashashati},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  url={https://openreview.net/forum?id=9yJKTosUex}
 }
 ```
 
