@@ -1,9 +1,10 @@
 
 <h1 align="center">
   <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" height="35" style="vertical-align: middle;"/>
+</h1>
+<h1 align="center">
   Boltzmann Semantic Score
 </h1>
-
 Official repository for:
 
 **Boltzmann Semantic Score: A Semantic Metric for Evaluating Large Vision Models Using Large Language Models**  
