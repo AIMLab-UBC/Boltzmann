@@ -1,10 +1,4 @@
 <p align="center">
-  <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" width="50"/>
-</p>
-
-# Boltzmann Semantic Score (BSS)
-
-<p align="center">
   <img src="assets/files/github_readme_figures/logo.png" alt="BSS Logo" height="40" style="vertical-align: middle;"/>
   <span style="font-size: 30px; vertical-align: middle;"><b>Boltzmann Semantic Score</b></span>
 </p>
