@@ -61,6 +61,7 @@ We use paired WSI images and pathology reports from **32 TCGA cancer types**, co
 
 ▶ Download Sample Precomputed Features:  
 [LVM Feature Files (Google Drive)](https://drive.google.com/drive/folders/14Vw8pAsck-PlfcwbwRCl_EtE4lYqMtNJ?usp=sharing)
+
 LLM features precomputed as a database dictionary can be found here: `./assets/generated_files/database/text/`
 
 These include:
@@ -105,7 +106,7 @@ cd Boltzmann
 To reproduce the LLM-based **text retrieval pipeline** described in the paper (only for a small sample set of TCGA-LGG and TCGA-GBM), run the following scripts in order:
 
 ```bash
-1. ./text_retrieval/text_create_database.sh     # Step 1: Creates the encoded database of all LLM features
+1. ./text_retrieval/text_create_database.sh     # Step 1: Creates the encoded database of all LLM features (Note: we have provided the precomputed LLM database in `./assets/generated_files/database/text/`, so you do not need to run this step for the sake of testing the module. You should run this step in case you have the raw LLM features for each report and you want to make the database instances)
 2. ./text_retrieval/text_search_eval.sh         # Step 2: Performs retrieval evaluation using the created database
 3. ./text_retrieval/search_result_reporter.sh   # Step 3: Aggregates results into a final report format
 ```
