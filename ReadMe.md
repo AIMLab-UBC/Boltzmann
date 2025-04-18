@@ -60,7 +60,8 @@ The theory of the Boltzmann semantic score is demonstrated as follows:
 We use paired WSI images and pathology reports from **32 TCGA cancer types**, covering ~9,500 patients.
 
 ▶ Download Sample Precomputed Features:  
-[LLM & LVM Feature Files (Google Drive)](https://drive.google.com/drive/folders/14Vw8pAsck-PlfcwbwRCl_EtE4lYqMtNJ?usp=sharing)
+[LVM Feature Files (Google Drive)](https://drive.google.com/drive/folders/14Vw8pAsck-PlfcwbwRCl_EtE4lYqMtNJ?usp=sharing)
+LLM features precomputed as a database dictionary can be found here: `./assets/generated_files/database/text/`
 
 These include:
 - `.pt` LLM embeddings of pathology reports
