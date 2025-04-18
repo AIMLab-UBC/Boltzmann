@@ -65,9 +65,8 @@ We use paired WSI images and pathology reports from **32 TCGA cancer types**, co
 LLM features precomputed as a database dictionary can be found here: `./assets/generated_files/database/text/`
 
 These include:
-- `.pt` LLM embeddings of pathology reports
-- `.h5` LVM features from 7 vision models
-- When you downloaded them, place them in the dedicated directories in `./assets/LLM` and  `./assets/LVM`, respectively.
+- `.pt` LLM embeddings of pathology reports as a dictionary 
+- `.h5` LVM features from 7 vision models. When you downloaded them, place them in the dedicated directory in  `./assets/LVM`.
 \
 We are now releasing a small portion of the data. We will be releasing the LLM encodings of pathology reports soon. Please stay tuned!
 ---
@@ -106,7 +105,7 @@ cd Boltzmann
 To reproduce the LLM-based **text retrieval pipeline** described in the paper (only for a small sample set of TCGA-LGG and TCGA-GBM), run the following scripts in order:
 
 ```bash
-1. ./text_retrieval/text_create_database.sh     # Step 1: Creates the encoded database of all LLM features (Note: we have provided the precomputed LLM database in `./assets/generated_files/database/text/`, so you do not need to run this step for the sake of testing the module. You should run this step in case you have the raw LLM features for each report and you want to make the database instances)
+1. ./text_retrieval/text_create_database.sh     # Step 1: Creates the encoded database of all LLM features (Note: we have provided the precomputed LLM database in `./assets/generated_files/database/text/`, so you do not need to run this step for the sake of testing the module. You should run this step in case you have the raw LLM features for each report, and you want to make the database instances directly.)
 2. ./text_retrieval/text_search_eval.sh         # Step 2: Performs retrieval evaluation using the created database
 3. ./text_retrieval/search_result_reporter.sh   # Step 3: Aggregates results into a final report format
 ```
