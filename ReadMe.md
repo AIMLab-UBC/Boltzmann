@@ -111,7 +111,10 @@ To reproduce the LLM-based **text retrieval pipeline** described in the paper (o
 ```
 
 ### 3. Reproducing the Survival Prediction Experiment
-To be updated!
+Please follow the steps in 
+```bash
+ ./survival_module/run_batch.sh
+```
 
 ### 4. Boltzmann Semantic Score Computation
 To evaluate the semantic alignment between vision and language models using the **Boltzmann Semantic Score**, simply run (for the given toy datasets, you can choose between LGG or GBM):
