@@ -46,7 +46,6 @@ The theory of the Boltzmann semantic score is demonstrated as follows:
 - ✅ Evaluated **5 LLMs** (e.g., Command-R, Bio-Llama3, Llama3, Gemma, Jamba)
 - ✅ Evaluated **7 LVMs** (e.g., PLIP, UNI, CTransPath, Phikon, Swin, ViT, Lunit-Dino) using **BSS**.
 - 📈 Found strong **correlation between BSS and downstream tasks** like retrieval accuracy and survival C-index
-- 📚 Demonstrated that **LLM features alone correlate with patient outcomes**
 
 ###  Why Use BSS?
 
